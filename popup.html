@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wider Twitter Settings</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h3{
+        text-align: center;
+    }
+    .slider-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px 0;
+    }
+    #widthPercentage {
+      width: 80%;
+      margin: 10px 0;
+    }
+    .percentage-display {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Wider Twitter</h3>
+  <div class="slider-container">
+    <label for="widthPercentage">Timeline Width:</label>
+    <div class="percentage-display"><span id="percentageValue">100</span>%</div>
+    <input type="range" id="widthPercentage" min="100" max="200" step="5" value="100">
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
